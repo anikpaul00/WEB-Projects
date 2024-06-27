@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <script src="script.js"></script>
+    <nav id="desktop-nav">
+        <div class="logo">Anik Paul</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Anik Paul</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    
+    <section id="profile">
+       <div class="section_pic-container">
+        <img src="./images/anik_1.jpeg" alt="a picture of mine" class="profile-image">
+       </div>
+       <div class="section_text">
+        <p class="section_text_p1">Hello,I'm</p>
+        <h1 class="title">Anik Paul</h1>
+        <p>Frontend Developer</p>
+        <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('C:/Users/USER/Desktop/html and css/portfolio/images/anik_cv.pdf')">Download CV</button>
+            <button class="btn btn-color-1" onclick="window.open('/#contact')">Contact Info</button>
+        </div>
+        <div id="socials-container">
+            <img src="./images/linkedin.png" alt="LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/anik-paul-b35170229/'">
+            <img src="./images/github.png" alt="Github profile" class="icon" onclick="location.href='https://github.com/dashboard'" >
+        </div>
+       </div>   
+    </section>
+    <section id="about">
+        <p class="section_text_p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section_pic-container">
+                <img src="./images/anik_1.jpeg" alt="my_picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./images/achievement.avif" alt="experience icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>1+ years <br>Frontend Development</p> 
+                    </div>
+                    <div class="details-container">
+                        <img src="./images/education.jpg" alt="education icon" class="icon">
+                        <h3>Education</h3>
+                        <p>B.Sc in ICE</p>
+                    </div>
+                    <div class="text-container">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quisquam ipsam magni iure corporis ad. Culpa vel velit, incidunt dolor rerum optio ipsam perferendis temporibus, illo tempore cum officiis laborum!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <img src="./images/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="section_text_p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./images/tick.jpg" alt="experience icon" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./images/tick.jpg" alt="experience icon" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./images/tick.jpg" alt="experience icon" class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./images/tick.jpg" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Problem Solving</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <p class="section_text_p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="expereince-details-container">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="" alt="project-image">
+                </div>
+                <h2 class="experience-sub-title project-title">Project One</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='github_account_link'">
+                        Github
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <p class="section_text_p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./images/email.png" alt="email-icon" class="icon contact-icon">
+                <p><a href="mailto:paulanik0099@gmail.com">paulanik0099@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./images/linkedin.png" alt="linkedIn-icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/anik-paul-b35170229/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Anik Paul. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
